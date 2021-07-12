@@ -14,6 +14,12 @@
 		8AA6B2FC269CC5F600FB5AC7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6B2FB269CC5F600FB5AC7 /* Constants.swift */; };
 		8AA6B304269CC67000FB5AC7 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6B303269CC67000FB5AC7 /* Router.swift */; };
 		8AA6B307269CC6F900FB5AC7 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6B306269CC6F900FB5AC7 /* Color+Extension.swift */; };
+		8AA6B30E269CC98700FB5AC7 /* StartScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6B30D269CC98700FB5AC7 /* StartScreenVC.swift */; };
+		8AA6B312269CC9E400FB5AC7 /* StartScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AA6B311269CC9E400FB5AC7 /* StartScreen.storyboard */; };
+		8AA6B315269CCA8800FB5AC7 /* StartScreenPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6B314269CCA8800FB5AC7 /* StartScreenPresentationModel.swift */; };
+		8AA6B318269CCA9400FB5AC7 /* StartScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6B317269CCA9400FB5AC7 /* StartScreenRouter.swift */; };
+		8AA6B31B269CCC0700FB5AC7 /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6B31A269CCC0700FB5AC7 /* CacheService.swift */; };
+		8AA6B322269CCF6600FB5AC7 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6B321269CCF6600FB5AC7 /* GameManager.swift */; };
 		C8E2F5F829C8494D49440ECD /* Pods_TicTakToe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367B9C542BEC9AA3E6D64775 /* Pods_TicTakToe.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +35,12 @@
 		8AA6B2FB269CC5F600FB5AC7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8AA6B303269CC67000FB5AC7 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		8AA6B306269CC6F900FB5AC7 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		8AA6B30D269CC98700FB5AC7 /* StartScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenVC.swift; sourceTree = "<group>"; };
+		8AA6B311269CC9E400FB5AC7 /* StartScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StartScreen.storyboard; sourceTree = "<group>"; };
+		8AA6B314269CCA8800FB5AC7 /* StartScreenPresentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenPresentationModel.swift; sourceTree = "<group>"; };
+		8AA6B317269CCA9400FB5AC7 /* StartScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenRouter.swift; sourceTree = "<group>"; };
+		8AA6B31A269CCC0700FB5AC7 /* CacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
+		8AA6B321269CCF6600FB5AC7 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 		906B2BF78C6603B24B343353 /* Pods-TicTakToe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTakToe.debug.xcconfig"; path = "Target Support Files/Pods-TicTakToe/Pods-TicTakToe.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +125,7 @@
 		8AA6B2F5269CC57E00FB5AC7 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				8AA6B309269CC92A00FB5AC7 /* StartScreen */,
 				8AA6B2FE269CC61200FB5AC7 /* Common */,
 			);
 			path = Presentation;
@@ -144,6 +157,8 @@
 		8AA6B2F9269CC5CA00FB5AC7 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				8AA6B31A269CCC0700FB5AC7 /* CacheService.swift */,
+				8AA6B321269CCF6600FB5AC7 /* GameManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -187,6 +202,41 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		8AA6B309269CC92A00FB5AC7 /* StartScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8AA6B30C269CC96500FB5AC7 /* Views */,
+				8AA6B30B269CC95900FB5AC7 /* Interface */,
+				8AA6B30A269CC94600FB5AC7 /* Controllers */,
+				8AA6B311269CC9E400FB5AC7 /* StartScreen.storyboard */,
+			);
+			path = StartScreen;
+			sourceTree = "<group>";
+		};
+		8AA6B30A269CC94600FB5AC7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8AA6B30D269CC98700FB5AC7 /* StartScreenVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8AA6B30B269CC95900FB5AC7 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				8AA6B314269CCA8800FB5AC7 /* StartScreenPresentationModel.swift */,
+				8AA6B317269CCA9400FB5AC7 /* StartScreenRouter.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		8AA6B30C269CC96500FB5AC7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		B74FD340941DF037196CB951 /* Pods */ = {
@@ -258,6 +308,7 @@
 			files = (
 				8AA6B2E6269CC2A400FB5AC7 /* LaunchScreen.storyboard in Resources */,
 				8AA6B2E3269CC2A400FB5AC7 /* Assets.xcassets in Resources */,
+				8AA6B312269CC9E400FB5AC7 /* StartScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,10 +345,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AA6B304269CC67000FB5AC7 /* Router.swift in Sources */,
+				8AA6B318269CCA9400FB5AC7 /* StartScreenRouter.swift in Sources */,
+				8AA6B30E269CC98700FB5AC7 /* StartScreenVC.swift in Sources */,
 				8AA6B307269CC6F900FB5AC7 /* Color+Extension.swift in Sources */,
 				8AA6B2DA269CC29B00FB5AC7 /* AppDelegate.swift in Sources */,
 				8AA6B2DC269CC29B00FB5AC7 /* SceneDelegate.swift in Sources */,
 				8AA6B2FC269CC5F600FB5AC7 /* Constants.swift in Sources */,
+				8AA6B31B269CCC0700FB5AC7 /* CacheService.swift in Sources */,
+				8AA6B315269CCA8800FB5AC7 /* StartScreenPresentationModel.swift in Sources */,
+				8AA6B322269CCF6600FB5AC7 /* GameManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,7 +495,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZLUJB55ZNH;
-				INFOPLIST_FILE = TicTakToe/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TicTakToe/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -460,7 +516,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZLUJB55ZNH;
-				INFOPLIST_FILE = TicTakToe/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TicTakToe/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

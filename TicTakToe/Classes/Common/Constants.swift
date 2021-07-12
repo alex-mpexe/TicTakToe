@@ -6,3 +6,6 @@
 //
 
 import Foundation
+
+let userScoreKey = "UserScore"
+let computerScoreKey = "ComputerScore"
