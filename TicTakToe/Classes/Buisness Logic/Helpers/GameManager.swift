@@ -25,6 +25,12 @@ final class GameManager {
     
     var userScore = 0
     var computerScore = 0
+    var currentGame: CurrentGame?
+    
+    // MARK: - Public Methods
+    func startNewGame(userMark: MarkType) {
+        currentGame = CurrentGame(userMark: userMark)
+    }
     
     
     

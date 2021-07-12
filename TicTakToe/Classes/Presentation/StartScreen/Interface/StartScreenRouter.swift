@@ -22,8 +22,8 @@ struct StartScreenRouter: Router {
         show(vc)
     }
     
-    func setStartScreen() {
+    func pushStartScreen() {
         guard let vc = storyboard.instantiateInitialViewController() as? StartScreenVC else { return }
-        set(vc)
+        push(vc)
     }
 }

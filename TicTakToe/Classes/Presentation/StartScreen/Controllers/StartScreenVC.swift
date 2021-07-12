@@ -45,6 +45,7 @@ class StartScreenVC: UIViewController {
     
     // MARK: - IBActions
     @IBAction func PlayButtonPressed(_ sender: Any) {
+        GameScreenRouter(presenter: self).pushGameScreen()
     }
     
 }

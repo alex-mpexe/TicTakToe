@@ -20,6 +20,13 @@
 		8AA6B318269CCA9400FB5AC7 /* StartScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6B317269CCA9400FB5AC7 /* StartScreenRouter.swift */; };
 		8AA6B31B269CCC0700FB5AC7 /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6B31A269CCC0700FB5AC7 /* CacheService.swift */; };
 		8AA6B322269CCF6600FB5AC7 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6B321269CCF6600FB5AC7 /* GameManager.swift */; };
+		8AA6B332269CE14A00FB5AC7 /* GameScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AA6B331269CE14A00FB5AC7 /* GameScreen.storyboard */; };
+		8AA6B335269CE15C00FB5AC7 /* GameScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6B334269CE15C00FB5AC7 /* GameScreenVC.swift */; };
+		8AA6B338269CE1BD00FB5AC7 /* GameScreenPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6B337269CE1BD00FB5AC7 /* GameScreenPresentationModel.swift */; };
+		8AA6B33B269CE1CF00FB5AC7 /* GameScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6B33A269CE1CF00FB5AC7 /* GameScreenRouter.swift */; };
+		8AA6B33F269CE5FE00FB5AC7 /* MarkChooseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6B33D269CE5FE00FB5AC7 /* MarkChooseVC.swift */; };
+		8AA6B340269CE5FE00FB5AC7 /* MarkChooseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AA6B33E269CE5FE00FB5AC7 /* MarkChooseVC.xib */; };
+		8AA6B343269CEC0A00FB5AC7 /* CurrentGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6B342269CEC0A00FB5AC7 /* CurrentGame.swift */; };
 		C8E2F5F829C8494D49440ECD /* Pods_TicTakToe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367B9C542BEC9AA3E6D64775 /* Pods_TicTakToe.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +48,13 @@
 		8AA6B317269CCA9400FB5AC7 /* StartScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenRouter.swift; sourceTree = "<group>"; };
 		8AA6B31A269CCC0700FB5AC7 /* CacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
 		8AA6B321269CCF6600FB5AC7 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		8AA6B331269CE14A00FB5AC7 /* GameScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameScreen.storyboard; sourceTree = "<group>"; };
+		8AA6B334269CE15C00FB5AC7 /* GameScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreenVC.swift; sourceTree = "<group>"; };
+		8AA6B337269CE1BD00FB5AC7 /* GameScreenPresentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreenPresentationModel.swift; sourceTree = "<group>"; };
+		8AA6B33A269CE1CF00FB5AC7 /* GameScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreenRouter.swift; sourceTree = "<group>"; };
+		8AA6B33D269CE5FE00FB5AC7 /* MarkChooseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkChooseVC.swift; sourceTree = "<group>"; };
+		8AA6B33E269CE5FE00FB5AC7 /* MarkChooseVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarkChooseVC.xib; sourceTree = "<group>"; };
+		8AA6B342269CEC0A00FB5AC7 /* CurrentGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentGame.swift; sourceTree = "<group>"; };
 		906B2BF78C6603B24B343353 /* Pods-TicTakToe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTakToe.debug.xcconfig"; path = "Target Support Files/Pods-TicTakToe/Pods-TicTakToe.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,6 +139,7 @@
 		8AA6B2F5269CC57E00FB5AC7 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				8AA6B32D269CE12400FB5AC7 /* GameScreen */,
 				8AA6B309269CC92A00FB5AC7 /* StartScreen */,
 				8AA6B2FE269CC61200FB5AC7 /* Common */,
 			);
@@ -134,6 +149,7 @@
 		8AA6B2F6269CC5A700FB5AC7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8AA6B342269CEC0A00FB5AC7 /* CurrentGame.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -239,6 +255,43 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		8AA6B32D269CE12400FB5AC7 /* GameScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8AA6B330269CE13900FB5AC7 /* Views */,
+				8AA6B32F269CE13200FB5AC7 /* Interface */,
+				8AA6B32E269CE12C00FB5AC7 /* Controllers */,
+				8AA6B331269CE14A00FB5AC7 /* GameScreen.storyboard */,
+			);
+			path = GameScreen;
+			sourceTree = "<group>";
+		};
+		8AA6B32E269CE12C00FB5AC7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8AA6B334269CE15C00FB5AC7 /* GameScreenVC.swift */,
+				8AA6B33D269CE5FE00FB5AC7 /* MarkChooseVC.swift */,
+				8AA6B33E269CE5FE00FB5AC7 /* MarkChooseVC.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8AA6B32F269CE13200FB5AC7 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				8AA6B337269CE1BD00FB5AC7 /* GameScreenPresentationModel.swift */,
+				8AA6B33A269CE1CF00FB5AC7 /* GameScreenRouter.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		8AA6B330269CE13900FB5AC7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		B74FD340941DF037196CB951 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,6 +361,8 @@
 			files = (
 				8AA6B2E6269CC2A400FB5AC7 /* LaunchScreen.storyboard in Resources */,
 				8AA6B2E3269CC2A400FB5AC7 /* Assets.xcassets in Resources */,
+				8AA6B340269CE5FE00FB5AC7 /* MarkChooseVC.xib in Resources */,
+				8AA6B332269CE14A00FB5AC7 /* GameScreen.storyboard in Resources */,
 				8AA6B312269CC9E400FB5AC7 /* StartScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,15 +400,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AA6B304269CC67000FB5AC7 /* Router.swift in Sources */,
+				8AA6B33B269CE1CF00FB5AC7 /* GameScreenRouter.swift in Sources */,
+				8AA6B33F269CE5FE00FB5AC7 /* MarkChooseVC.swift in Sources */,
+				8AA6B338269CE1BD00FB5AC7 /* GameScreenPresentationModel.swift in Sources */,
 				8AA6B318269CCA9400FB5AC7 /* StartScreenRouter.swift in Sources */,
 				8AA6B30E269CC98700FB5AC7 /* StartScreenVC.swift in Sources */,
 				8AA6B307269CC6F900FB5AC7 /* Color+Extension.swift in Sources */,
+				8AA6B343269CEC0A00FB5AC7 /* CurrentGame.swift in Sources */,
 				8AA6B2DA269CC29B00FB5AC7 /* AppDelegate.swift in Sources */,
 				8AA6B2DC269CC29B00FB5AC7 /* SceneDelegate.swift in Sources */,
 				8AA6B2FC269CC5F600FB5AC7 /* Constants.swift in Sources */,
 				8AA6B31B269CCC0700FB5AC7 /* CacheService.swift in Sources */,
 				8AA6B315269CCA8800FB5AC7 /* StartScreenPresentationModel.swift in Sources */,
 				8AA6B322269CCF6600FB5AC7 /* GameManager.swift in Sources */,
+				8AA6B335269CE15C00FB5AC7 /* GameScreenVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

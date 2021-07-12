@@ -29,7 +29,7 @@ extension Router {
         presenter.show(viewController, sender: .none)
     }
     
-    func set(_ viewController: UIViewController, animated: Bool = true, animationType: UIView.AnimationOptions = .transitionCrossDissolve) {
+    func push(_ viewController: UIViewController, animated: Bool = true, animationType: UIView.AnimationOptions = .transitionCrossDissolve) {
         if let navVC = presenter?.navigationController {
             presenter?.firstParent().view.endEditing(true)
             navVC.pushViewController(viewController, animated: animated)
