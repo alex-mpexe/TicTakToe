@@ -27,6 +27,10 @@
 		8AA6B33F269CE5FE00FB5AC7 /* MarkChooseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6B33D269CE5FE00FB5AC7 /* MarkChooseVC.swift */; };
 		8AA6B340269CE5FE00FB5AC7 /* MarkChooseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AA6B33E269CE5FE00FB5AC7 /* MarkChooseVC.xib */; };
 		8AA6B343269CEC0A00FB5AC7 /* CurrentGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6B342269CEC0A00FB5AC7 /* CurrentGame.swift */; };
+		8AA6B357269E18EC00FB5AC7 /* GameBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6B355269E18EC00FB5AC7 /* GameBoardVC.swift */; };
+		8AA6B358269E18EC00FB5AC7 /* GameBoardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AA6B356269E18EC00FB5AC7 /* GameBoardVC.xib */; };
+		8AA6B35B269E18FE00FB5AC7 /* GameBoardPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6B35A269E18FE00FB5AC7 /* GameBoardPresentationModel.swift */; };
+		8AA6B35E269E546B00FB5AC7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6B35D269E546B00FB5AC7 /* Extensions.swift */; };
 		C8E2F5F829C8494D49440ECD /* Pods_TicTakToe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367B9C542BEC9AA3E6D64775 /* Pods_TicTakToe.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +59,10 @@
 		8AA6B33D269CE5FE00FB5AC7 /* MarkChooseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkChooseVC.swift; sourceTree = "<group>"; };
 		8AA6B33E269CE5FE00FB5AC7 /* MarkChooseVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarkChooseVC.xib; sourceTree = "<group>"; };
 		8AA6B342269CEC0A00FB5AC7 /* CurrentGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentGame.swift; sourceTree = "<group>"; };
+		8AA6B355269E18EC00FB5AC7 /* GameBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardVC.swift; sourceTree = "<group>"; };
+		8AA6B356269E18EC00FB5AC7 /* GameBoardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameBoardVC.xib; sourceTree = "<group>"; };
+		8AA6B35A269E18FE00FB5AC7 /* GameBoardPresentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardPresentationModel.swift; sourceTree = "<group>"; };
+		8AA6B35D269E546B00FB5AC7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		906B2BF78C6603B24B343353 /* Pods-TicTakToe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTakToe.debug.xcconfig"; path = "Target Support Files/Pods-TicTakToe/Pods-TicTakToe.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -201,6 +209,7 @@
 		8AA6B300269CC62700FB5AC7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				8AA6B35D269E546B00FB5AC7 /* Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -269,9 +278,9 @@
 		8AA6B32E269CE12C00FB5AC7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8AA6B354269E18D300FB5AC7 /* GameBoardVC */,
 				8AA6B334269CE15C00FB5AC7 /* GameScreenVC.swift */,
-				8AA6B33D269CE5FE00FB5AC7 /* MarkChooseVC.swift */,
-				8AA6B33E269CE5FE00FB5AC7 /* MarkChooseVC.xib */,
+				8AA6B352269E180300FB5AC7 /* MarkChoiceVC */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -290,6 +299,25 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		8AA6B352269E180300FB5AC7 /* MarkChoiceVC */ = {
+			isa = PBXGroup;
+			children = (
+				8AA6B33D269CE5FE00FB5AC7 /* MarkChooseVC.swift */,
+				8AA6B33E269CE5FE00FB5AC7 /* MarkChooseVC.xib */,
+			);
+			path = MarkChoiceVC;
+			sourceTree = "<group>";
+		};
+		8AA6B354269E18D300FB5AC7 /* GameBoardVC */ = {
+			isa = PBXGroup;
+			children = (
+				8AA6B355269E18EC00FB5AC7 /* GameBoardVC.swift */,
+				8AA6B356269E18EC00FB5AC7 /* GameBoardVC.xib */,
+				8AA6B35A269E18FE00FB5AC7 /* GameBoardPresentationModel.swift */,
+			);
+			path = GameBoardVC;
 			sourceTree = "<group>";
 		};
 		B74FD340941DF037196CB951 /* Pods */ = {
@@ -360,6 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AA6B2E6269CC2A400FB5AC7 /* LaunchScreen.storyboard in Resources */,
+				8AA6B358269E18EC00FB5AC7 /* GameBoardVC.xib in Resources */,
 				8AA6B2E3269CC2A400FB5AC7 /* Assets.xcassets in Resources */,
 				8AA6B340269CE5FE00FB5AC7 /* MarkChooseVC.xib in Resources */,
 				8AA6B332269CE14A00FB5AC7 /* GameScreen.storyboard in Resources */,
@@ -400,12 +429,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AA6B304269CC67000FB5AC7 /* Router.swift in Sources */,
+				8AA6B35E269E546B00FB5AC7 /* Extensions.swift in Sources */,
 				8AA6B33B269CE1CF00FB5AC7 /* GameScreenRouter.swift in Sources */,
 				8AA6B33F269CE5FE00FB5AC7 /* MarkChooseVC.swift in Sources */,
 				8AA6B338269CE1BD00FB5AC7 /* GameScreenPresentationModel.swift in Sources */,
 				8AA6B318269CCA9400FB5AC7 /* StartScreenRouter.swift in Sources */,
 				8AA6B30E269CC98700FB5AC7 /* StartScreenVC.swift in Sources */,
+				8AA6B35B269E18FE00FB5AC7 /* GameBoardPresentationModel.swift in Sources */,
 				8AA6B307269CC6F900FB5AC7 /* Color+Extension.swift in Sources */,
+				8AA6B357269E18EC00FB5AC7 /* GameBoardVC.swift in Sources */,
 				8AA6B343269CEC0A00FB5AC7 /* CurrentGame.swift in Sources */,
 				8AA6B2DA269CC29B00FB5AC7 /* AppDelegate.swift in Sources */,
 				8AA6B2DC269CC29B00FB5AC7 /* SceneDelegate.swift in Sources */,

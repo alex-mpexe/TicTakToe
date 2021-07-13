@@ -10,6 +10,15 @@ import UIKit
 enum MarkType {
     case xMark
     case oMark
+    
+    var markName: String {
+        switch self {
+        case .xMark:
+            return "xmark"
+        case .oMark:
+            return "omark"
+        }
+    }
 }
 
 class GameScreenPresentationModel {
@@ -22,10 +31,8 @@ class GameScreenPresentationModel {
     
     // MARK: - Public Methods
     func startGame(userMark: MarkType, boardSize: Int) {
-        gameManager.startNewGame(userMark: userMark)
+        gameManager.startNewGame(userMark: userMark, boardSize: boardSize)
         startGameHandler?()
     }
-    
-    // MARK: - Private Methods
     
 }

@@ -40,6 +40,7 @@
                     </view>
                     <connections>
                         <outlet property="containerView" destination="n0A-1X-6jg" id="Cyw-KE-2uq"/>
+                        <outlet property="titleLabel" destination="X1I-rL-gmg" id="QJT-sa-T2Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OQl-mw-eF7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

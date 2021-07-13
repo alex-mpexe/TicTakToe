@@ -16,20 +16,19 @@ final class CacheService {
     private let defaults = UserDefaults.standard
     
     // MARK: - Initializers
-    private init() {
-        
-    }
+    private init() {}
     
     // MARK: - Public methods
     func addGameResult(isUserWin: Bool) {
         let key = isUserWin ? userScoreKey : computerScoreKey
-        var savedData = defaults.object(forKey: key) as? Int ?? 0
-        defaults.set(savedData += 1, forKey: key)
+        let savedData = defaults.object(forKey: key) as? [Int] ?? [0]
+        let newValue = savedData[0] + 1
+        defaults.set([newValue], forKey: key)
     }
     
     func getStatistics() {
-        GameManager.shared.userScore = defaults.object(forKey: userScoreKey) as? Int ?? 0
-        GameManager.shared.computerScore = defaults.object(forKey: computerScoreKey) as? Int ?? 0
+        GameManager.shared.userScore = (defaults.object(forKey: userScoreKey) as? [Int])?[0] ?? 0
+        GameManager.shared.computerScore = (defaults.object(forKey: computerScoreKey) as? [Int])?[0] ?? 0
     }
     
 }
